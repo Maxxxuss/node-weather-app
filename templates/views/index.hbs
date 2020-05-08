@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <title class="">{{tabTitel}}</title>
+        <link rel="icon" href="/img/icon.png">
+
+        <link rel="stylesheet" href="/css/style.css">
+         
+    </head>
+
+    <body>  
+        <div class="main-content">
+            {{>header}}
+            <P> diese Seite zeigt dir das WEtter </P>
+            <form>
+                <input placeholder="Gebe einen Ort an">
+                <button>Suche</button>
+
+            </form>
+
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        
+        
+
+
+        </div>
+        
+
+      {{>footer}}
+     <script src="/js/app.js"></script>   // die einzige seite die den Verweis zu app.js hat ; ans ende, wegen der Search-EINGABE 
+
+
+    </body>
+
+
+</html>    
