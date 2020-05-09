@@ -13,6 +13,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express()
+const port = process.env.PORT || 3000  // erforderlich für Heroku  und alternativ über Port 3000
 
 // Pfad definition für Express espressjs.com
 const publicDirectoryPath = path.join(__dirname,'../public')
@@ -121,8 +122,8 @@ app.get('/*', (req, res)=>{
 
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     
-    console.log('Server läuft auf Port 3000.')
+    console.log('Server läuft auf Port ' + port)
 
 })
