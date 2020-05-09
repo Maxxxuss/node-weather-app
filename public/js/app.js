@@ -27,6 +27,9 @@
 
         // projekt auf github hochladen über den Terminal:  git push -u origin master
         // git hub webseite neuladen, Projekt sollte nun hochgeladen sein 
+        // nach update: git push    zum ändern der EInstellung
+        // git remote   zeigt alle Remotes an 
+        // nach update in git einstellung nach Heroku laden: git push heroku master
 
 // Heroku
     // heroku keys:add       Upload Datei
@@ -51,7 +54,7 @@ weatherFrom.addEventListener('submit', (e) =>  {
     messageTwo.textContent = '...'
 
     // fetch('http://localhost:3000/weather?adress='+location).then((response)=>{
-        fetch('/weater?adress='+location).then((response)=>{        // start der URL für Heroku bei Portänderung 
+        fetch('/weather?adress='+location).then((response)=>{        // start der URL für Heroku bei Portänderung 
         response.json().then((data) =>  {
     
             if (data.error) {
